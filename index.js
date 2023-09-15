@@ -61,7 +61,7 @@ function processData(data, totalCpuUsageFromCluster, json = false){
         console.log(`Total CPU Requests from cluster: ${totalCpuUsageFromCluster.toFixed(2)} vCPUs`);
         console.log(`Usage percent from Payment applications: ${usagePercent}%`);
         console.log(`Total Cost from Payment applications per year: USD ${(usagePercent * globalClusterCostPerYear / 100).toFixed(2)} / y`);
-        console.log(`Total Cost from Payment applications per month: USD ${(usagePercent * globalClusterCostPerYear / 100 / 12).toFixed(2)} / y`);
+        console.log(`Total Cost from Payment applications per month: USD ${(usagePercent * globalClusterCostPerYear / 100 / 12).toFixed(2)} / m`);
         console.log('='.repeat(50))
     } else {
         // TODO: return an object
@@ -79,7 +79,7 @@ try {
   const totalCpuUsageFromCluster = data['dafiti-live']['cluster']['total-cpu']
   // Initialize summary variables
 
-  processData(data, totalCpuUsageFromCluster, true);
+  processData(data, totalCpuUsageFromCluster, false);
 
 } catch (error) {
   console.error('Error parsing YAML:', error);

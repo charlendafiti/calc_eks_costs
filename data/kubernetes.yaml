@@ -1,0 +1,60 @@
+dafiti-live:
+  cluster:
+    total-cpu: 92
+    total-value-per-year: 48000
+  applications:
+    boleto:
+      current-cpu-requests: 3.4
+
+    boleto-adapter-cnab:
+      current-cpu-requests: 0.3
+
+    payment:
+      current-cpu-requests: 0.5
+
+    payment-adapter-adyen:
+      current-cpu-requests: 0.31  
+
+    payment-adapter-cybersource: 
+      state: Disabled
+      current-cpu-requests: 0  
+
+    payment-adapter-pix-itau:
+      current-cpu-requests: 0.51
+
+    payment-adapter-pix-santander:
+      current-cpu-requests: 0.27   
+
+    payment-admin:
+      current-cpu-requests: 0.24  
+
+    payment-api:
+      current-cpu-requests: 0.59
+
+    payment-configuration-api:
+      status: disabled
+      current-cpu-requests: 0
+
+    payment-gateway-strategy:
+      current-cpu-requests: 0.28
+
+    payment-order-bridge:
+      current-cpu-requests: 0.53
+
+    registradora:
+      current-cpu-requests: 4.97
+
+    registradora-dashboard:
+      current-cpu-requests: 0.15
+
+    transaction-boleto:
+      current-cpu-requests: 0.36  
+
+    transaction-payment-card:
+      current-cpu-requests: 0.59    
+
+    transaction-pix:
+      current-cpu-requests: 0.87     
+
+    transaction-voucher:
+      current-cpu-requests: 0.4     

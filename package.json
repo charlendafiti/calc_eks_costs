@@ -1,0 +1,12 @@
+{
+  "name": "calc_cpu_from_eks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "show": "nodemon --exec 'clear & node index.js'"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

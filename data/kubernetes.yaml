@@ -1,6 +1,6 @@
 dafiti-live:
   cluster:
-    total-cpu: 92
+    total-cpu: 324
     total-value-per-year: 48000
   applications:
     boleto:
